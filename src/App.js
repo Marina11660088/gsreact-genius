@@ -1,13 +1,21 @@
-import './App.css';
-import GoodEveningComponent from './GoodEveningComponent';
-import GoodMorningComponent from './GoodMorningComponent';
+import ListComponent from './ListComponent';
 
+import RenderComponent from './RenderComponent';
+import './App.css';
 
 function App() {
-  const greeting = "morning"
+  
+
+
   return (
     <div>
-     {greeting === "morning" ? <GoodMorningComponent/> : <GoodEveningComponent/>}
+      <header className='App-header'>
+        
+      <ListComponent/>
+      
+      <RenderComponent/>
+      </header>
+      
     </div>
   );
 }
